@@ -32,7 +32,7 @@ def profanity_check(comment_details):
 def degree_check(comment_dict):
     for user in comment_dict:
         degree='low'
-        com=Comment(user,comment_dict[user])
+        com=Comment(user,comment_dict[user]) #! com is the instance of our Comment class which is an ADT to store our comment details
         user_comment_details=com.comment_details()
         count=profanity_check(user_comment_details[1].lower())
         if 1<count<5:
