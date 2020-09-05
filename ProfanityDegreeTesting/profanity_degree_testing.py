@@ -20,8 +20,7 @@ import my_module
 import module_for_individual_inputs
 
 
-#! only required function to check the degree of profanity.
-# Can be named init() for this module so that it is easy to work from an external API
+
 def func_initial():
     
     print('\n\nHello user, Welcome to the profanity degree tester \nHow would you like to check the degree of profanity?\n\n')
@@ -55,7 +54,7 @@ elif a==2:
     for line in file_of_comments:
         user_and_comment=line.split(';') #assuming no two users have the same name, ideally we will use user_ID in place of the name which is unique.
         comment_dict[user_and_comment[0]]=user_and_comment[1]
-
+    
     my_module.degree_check(comment_dict)
 
 
